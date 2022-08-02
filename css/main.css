@@ -1,12 +1,15 @@
 /*  font style link  */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
+/* common style & utilities */
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
 }
 
 /* header stylsheet */
+main {}
+
 .container {
     width: 992px;
     background-color: #161616;
@@ -24,9 +27,10 @@ body {
     grid-column-gap: 25px;
 }
 
-.header-box img {
+.banner-image {
     width: 580px;
     height: 610px;
+    transition: height 2s, width 2s, ease-in;
 }
 
 .inner-box {
@@ -36,21 +40,25 @@ body {
 
 }
 
-.header-button {
-    background-color: #DD0000;
-    border: 1px solid #DD0000;
-    border-radius: 5px;
-    width: 190px;
-}
 
 .header-link {
     text-decoration: none;
     color: #FFFFFF;
+    background-color: #DD0000;
+    border: 1px solid #161616;
+    border-radius: 5px;
+    width: 190px;
     display: grid;
     grid-template-columns: repeat(1, 60% 20%);
     align-items: center;
     justify-items: center;
     justify-content: center;
+    transition: background-color, border, 0.5s ease-out;
+}
+
+.inner-box a:hover {
+    background-color: #161616;
+    border: 1px solid #DD0000;
 }
 
 /* footer style */
@@ -73,13 +81,18 @@ hr {
     width: 70%;
 }
 
-.footer-nav {
-    color: #B9B9B9;
-}
-
 .nav-item {
     list-style-type: none;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     justify-items: center;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #B9B9B9;
+}
+
+.nav-item a:hover {
+    color: #FFFFFF;
 }
