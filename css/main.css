@@ -199,7 +199,7 @@ body {
 /* footer style */
 .footer-container {
     background-color: #161616;
-    height: 440px;
+    height: 540px;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     justify-items: center;
@@ -240,7 +240,9 @@ hr {
     margin: 0 40%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 15px;
     justify-items: center;
+    justify-content: center;
 }
 
 .fa-brands {
@@ -313,7 +315,7 @@ media queries
     }
 
     /* footer style */
-    .nav-item {
+    .nav-item-1 {
         grid-template-columns: repeat(1, 1fr);
         grid-row-gap: 20px;
         padding: 0;
@@ -393,7 +395,7 @@ media queries
     }
 
     /* footer style */
-    .nav-item {
+    .nav-item-1 {
         grid-template-columns: repeat(3, 1fr);
     }
 }
